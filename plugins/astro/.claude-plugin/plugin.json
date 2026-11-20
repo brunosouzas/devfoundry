@@ -1,0 +1,15 @@
+{
+  "name": "astro",
+  "version": "1.0.0",
+  "description": "Astro static sites: clean builds and astro check, .astro markup pitfalls, content schema helpers, public URLs and redirects, as rules with stable IDs.",
+  "author": {
+    "name": "Bruno Souza",
+    "url": "https://github.com/brunosouzas"
+  },
+  "homepage": "https://github.com/brunosouzas/devfoundry/tree/main/plugins/astro",
+  "repository": "https://github.com/brunosouzas/devfoundry",
+  "license": "MIT",
+  "keywords": [
+    "astro"
+  ]
+}

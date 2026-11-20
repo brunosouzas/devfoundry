@@ -1,0 +1,91 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "devfoundry",
+  "description": "Devfoundry: Claude Code plugins with rules for Java, Python, shell, Astro, Cloudflare, Azure Pipelines, GitHub Actions and Jenkins.",
+  "owner": {
+    "name": "Bruno Souza",
+    "url": "https://github.com/brunosouzas"
+  },
+  "plugins": [
+    {
+      "name": "java",
+      "description": "Standalone Java: the build and JDK a project declares, dependencies, nulls, exceptions and JUnit tests, as rules with stable IDs.",
+      "author": {
+        "name": "Bruno Souza"
+      },
+      "source": "./plugins/java",
+      "category": "development",
+      "homepage": "https://github.com/brunosouzas/devfoundry/tree/main/plugins/java"
+    },
+    {
+      "name": "python",
+      "description": "Python applications, CLIs and scripts with logic: locked dependencies, environments, safe paths, encodings and pytest tests, as rules with stable IDs and checks that run.",
+      "author": {
+        "name": "Bruno Souza"
+      },
+      "source": "./plugins/python",
+      "category": "development",
+      "homepage": "https://github.com/brunosouzas/devfoundry/tree/main/plugins/python"
+    },
+    {
+      "name": "shell",
+      "description": "Bash and POSIX sh scripts, git hooks and pipeline steps: strict mode, quoting, guarded destructive commands and portability, as rules with stable IDs and checks that run.",
+      "author": {
+        "name": "Bruno Souza"
+      },
+      "source": "./plugins/shell",
+      "category": "development",
+      "homepage": "https://github.com/brunosouzas/devfoundry/tree/main/plugins/shell"
+    },
+    {
+      "name": "astro",
+      "description": "Astro static sites: clean builds and astro check, .astro markup pitfalls, content schema helpers, public URLs and redirects, as rules with stable IDs.",
+      "author": {
+        "name": "Bruno Souza"
+      },
+      "source": "./plugins/astro",
+      "category": "development",
+      "homepage": "https://github.com/brunosouzas/devfoundry/tree/main/plugins/astro"
+    },
+    {
+      "name": "cloudflare",
+      "description": "Cloudflare Workers and Pages: wrangler config, routes, webhook signatures, secrets, staging and production deploys and rollbacks, as rules with stable IDs.",
+      "author": {
+        "name": "Bruno Souza"
+      },
+      "source": "./plugins/cloudflare",
+      "category": "development",
+      "homepage": "https://github.com/brunosouzas/devfoundry/tree/main/plugins/cloudflare"
+    },
+    {
+      "name": "azure-devops",
+      "description": "Azure Pipelines YAML: templates and pinned refs, variable groups, environments and approvals, secrets and release triggers, as rules with stable IDs and checks that run.",
+      "author": {
+        "name": "Bruno Souza"
+      },
+      "source": "./plugins/azure-devops",
+      "category": "development",
+      "homepage": "https://github.com/brunosouzas/devfoundry/tree/main/plugins/azure-devops"
+    },
+    {
+      "name": "github-actions",
+      "description": "GitHub Actions workflows: pinned actions, least-privilege permissions, untrusted input, secrets and environments, as rules with stable IDs and checks that run.",
+      "author": {
+        "name": "Bruno Souza"
+      },
+      "source": "./plugins/github-actions",
+      "category": "development",
+      "homepage": "https://github.com/brunosouzas/devfoundry/tree/main/plugins/github-actions"
+    },
+    {
+      "name": "jenkins",
+      "description": "Jenkinsfiles and Groovy shared libraries: declarative pipelines, failure handling, credentials and parameters in sh steps, as rules with stable IDs.",
+      "author": {
+        "name": "Bruno Souza"
+      },
+      "source": "./plugins/jenkins",
+      "category": "development",
+      "homepage": "https://github.com/brunosouzas/devfoundry/tree/main/plugins/jenkins"
+    }
+  ]
+}

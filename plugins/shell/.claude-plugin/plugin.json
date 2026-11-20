@@ -1,0 +1,17 @@
+{
+  "name": "shell",
+  "version": "1.0.0",
+  "description": "Bash and POSIX sh scripts, git hooks and pipeline steps: strict mode, quoting, guarded destructive commands and portability, as rules with stable IDs and checks that run.",
+  "author": {
+    "name": "Bruno Souza",
+    "url": "https://github.com/brunosouzas"
+  },
+  "homepage": "https://github.com/brunosouzas/devfoundry/tree/main/plugins/shell",
+  "repository": "https://github.com/brunosouzas/devfoundry",
+  "license": "MIT",
+  "keywords": [
+    "shell",
+    "bash",
+    "sh"
+  ]
+}

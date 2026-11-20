@@ -1,0 +1,18 @@
+{
+  "name": "github-actions",
+  "version": "1.0.0",
+  "description": "GitHub Actions workflows: pinned actions, least-privilege permissions, untrusted input, secrets and environments, as rules with stable IDs and checks that run.",
+  "author": {
+    "name": "Bruno Souza",
+    "url": "https://github.com/brunosouzas"
+  },
+  "homepage": "https://github.com/brunosouzas/devfoundry/tree/main/plugins/github-actions",
+  "repository": "https://github.com/brunosouzas/devfoundry",
+  "license": "MIT",
+  "keywords": [
+    "github-actions",
+    "workflows",
+    "ci",
+    "cd"
+  ]
+}

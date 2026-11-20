@@ -1,0 +1,16 @@
+{
+  "name": "python",
+  "version": "1.0.0",
+  "description": "Python applications, CLIs and scripts with logic: locked dependencies, environments, safe paths, encodings and pytest tests, as rules with stable IDs and checks that run.",
+  "author": {
+    "name": "Bruno Souza",
+    "url": "https://github.com/brunosouzas"
+  },
+  "homepage": "https://github.com/brunosouzas/devfoundry/tree/main/plugins/python",
+  "repository": "https://github.com/brunosouzas/devfoundry",
+  "license": "MIT",
+  "keywords": [
+    "python",
+    "pytest"
+  ]
+}
