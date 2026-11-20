@@ -1,0 +1,44 @@
+name: CI
+
+# The checks that need no credentials: the plugin manifests and the skill frontmatter as strict YAML.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  checks:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      CLAUDE_CODE_VERSION: 2.1.308
+      PYYAML_VERSION: 6.0.2
+      DISABLE_AUTOUPDATER: 1
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Plugin manifests
+        run: |
+          set -uo pipefail
+          npm install -g "@anthropic-ai/claude-code@${CLAUDE_CODE_VERSION}"
+          rc=0
+          claude plugin validate . || rc=1
+          for p in plugins/*/; do claude plugin validate "$p" || rc=1; done
+          exit "$rc"
+
+      - name: Skill frontmatter is strict YAML
+        if: ${{ !cancelled() }}
+        run: |
+          set -euo pipefail
+          python3 -m venv "$RUNNER_TEMP/venv"
+          "$RUNNER_TEMP/venv/bin/pip" install --quiet "pyyaml==${PYYAML_VERSION}"
+          "$RUNNER_TEMP/venv/bin/python" tooling/ci/check-skill-frontmatter.py
